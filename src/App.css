@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+.label {
+  background-color: blueviolet;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.label:hover{
+ color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainDiv {
   display: flex;
   flex-direction: column;
+  height: auto;
+  width: 450px;
+  margin-left: 35%;
+  margin-top: 5px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border: 2px solid black;
+  border-radius: 60px;
+  background-color: blueviolet;
+}
+
+.btn {
+  border-radius: 25px;
+  font-size: 25px;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.input {
+  height: 55px;
+  width: 400px;
+  font-size: 30px;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin: 10px;
+  background-color: rgb(138, 73, 199);
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.603);
+  opacity: 1;
+  text-align: center;
+
+}
+
+.subDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: right;
+  height: auto;
+  width: 400px;
+  font-size: 30px;
+  border: 1px solid black;
+  border-radius: 40px;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 50px;
+}
+
+.taskList{
+  cursor: pointer;
+  width: 300px;
+  font-size: 35px;
+  display: inline;
+  text-align: left;
+  margin: 0px;
+  text-decoration: yellow;
+  padding: 0px 0px 0px 0px;
+
+}
+
+.taskList:checked{
+  background-color: yellow;
   color: white;
+  cursor: pointer;
+  text-decoration: line-through;
+}
+  
+/* .taskList {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+} */
+
+.taskLabel {
+  cursor: pointer;
+  font-size: 30px;
+  color: blue;
+  display: inline;
+  text-align: right;
+ 
 }
 
-.App-link {
-  color: #61dafb;
+ul{
+  width: 380px;
+  margin: 0px;
+  padding: 15px 0px 15px 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Div{
+  display: flex;
 }

@@ -1,13 +1,15 @@
-export const addUser = data => {
-    return {
-        type: "ADD_USER",
-        payload: data
-    };
+const addItem = (data) => {
+  return {
+    type: "add",
+    payload: data,
+  };
 };
 
-export const removeUser = index => {
-    return {
-        type: "REMOVE_USER",
-        index 
-    };
+const removeItem = (index) => {
+  return {
+    type: "remove",
+    index,
+  };
 };
+
+export { addItem, removeItem };
